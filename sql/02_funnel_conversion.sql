@@ -1,3 +1,4 @@
+-- Расчёт конверсии по этапам
 WITH stage_count AS (
   SELECT stage_name, COUNT(DISTINCT lead_id) AS leads_at_stage
   FROM stages
